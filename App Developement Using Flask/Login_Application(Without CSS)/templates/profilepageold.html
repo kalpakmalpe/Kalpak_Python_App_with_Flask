@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Profile page</title>
+    <div>
+      <a href="http://localhost:5000/dashboard">Dashboard</a>
+      <a href="http://localhost:5000/profilepage">Profile</a>
+      <a href="http://localhost:5000/profileupdatepage">Update Profile</a>  
+      <a href="http://localhost:5000/changepassword">ChangePassword</a>
+      <a href="http://localhost:5000/logout">Logout</a>
+     </div>
+</head>
+<body>
+ <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ userinfo[0] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ userinfo[1] }}</td>
+        </tr>
+        <tr>
+            <td>Mobile No:</td>
+            <td>{{ userinfo[2] }}</td>
+        </tr>
+        <tr>
+            <td>Education:</td>
+            <td>{{ userinfo[3] }}</td>
+        </tr>
+    </table>

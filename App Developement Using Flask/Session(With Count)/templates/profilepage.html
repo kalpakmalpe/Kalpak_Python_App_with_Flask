@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Profile page</title>
+    <div>
+      <a href="http://localhost:5000/homepage">Home</a>
+      <a href="http://localhost:5000/profilepage">Profile</a>
+      <a href="http://localhost:5000/changepassword">ChangePassword</a>
+      <a href="http://localhost:5000/logout">Logout</a>
+     </div>
+</head>
+<body>
+	<form method='POST' action='http://localhost:5000/process'>
+		<table>
+			
+            <tr>
+   			<td>
+  				Name       :<input type='text' name='name' value={{loginuser}} placeholder=''>
+			</td>
+			</tr>
+            
+			<tr>
+			<td>Email      :<input type='email' name='tmobile' placeholder='' ></td>
+			</tr>
+            <tr>
+			<td>Mobile No  :<input type='number' name='tmobile' placeholder='' ></td>
+			</tr>
+            <tr>
+			<td>City       :<input type='text' name='tcity' placeholder='' ></td>
+			</tr>
+           
+			<tr>
+			<td>
+			<input type='submit' value='Update'>
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+    

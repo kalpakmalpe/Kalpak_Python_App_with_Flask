@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Profile page</title>
+    <div>
+      <a href="http://localhost:5000/dashboard">Dashboard</a>
+      <a href="http://localhost:5000/profilepage">Profile</a>
+      <a href="http://localhost:5000/profileupdatepage">Update Profile</a>  
+      <a href="http://localhost:5000/changepassword">ChangePassword</a>
+      <a href="http://localhost:5000/logout">Logout</a>
+     </div>
+</head>
+<body>
+ <form method='POST' action='http://localhost:5000/updaterec'>
+		<table>
+			
+            <tr>
+   			<td>
+  				Name       :<input type='text' name='name' value={{userinfo[0]}} >
+			</td>
+			</tr>
+            
+			<tr>
+			<td>Email      :<input type='email' name='email'  value={{userinfo[1]}}  ></td>
+			</tr>
+            <tr>
+			<td>Mobile No  :<input type='number' name='mobile'  value={{userinfo[2]}}></td>
+			</tr>
+            <tr>
+			<td>Education       :<input type='text' name='education'  value={{userinfo[3]}} ></td>
+			</tr>
+           
+			<tr>
+			<td>
+			<input type='submit' value='Update'>
+			</td>
+			</tr>
+		</table>
+	</form>

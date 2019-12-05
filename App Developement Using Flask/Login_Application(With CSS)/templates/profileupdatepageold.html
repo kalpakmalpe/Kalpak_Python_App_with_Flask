@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Profile page</title>
+    <div>
+      <a href="http://localhost:5000/dashboard">Dashboard</a>
+      <a href="http://localhost:5000/profilepage">Profile</a>
+      <a href="http://localhost:5000/profileupdatepage">Update Profile</a>  
+      <a href="http://localhost:5000/changepassword">ChangePassword</a>
+      <a href="http://localhost:5000/logout">Logout</a>
+     </div>
+</head>
+<body>
+	<form method='POST' action='http://localhost:5000/updaterec'>
+		<table>
+			
+            <tr>
+   			<td>
+  				Name       :<input type='text' name='name'  placeholder='Update Your Name'>
+			</td>
+			</tr>
+            
+			<tr>
+			<td>Email      :<input type='email' name='email' placeholder='Update Your Email' ></td>
+			</tr>
+            <tr>
+			<td>Mobile No  :<input type='number' name='mobile' placeholder='Update Your Mobile No' ></td>
+			</tr>
+            <tr>
+			<td>Education       :<input type='text' name='education' placeholder='Update Your Education' ></td>
+			</tr>
+           
+			<tr>
+			<td>
+			<input type='submit' value='Update'>
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+    
